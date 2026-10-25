@@ -1,0 +1,61 @@
+/* ----- Encabezado ----- */
+.encabezado {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.totales {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Etiquetas redondeadas con los números */
+.badge {
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  font-size: 14px;
+}
+
+.badge-pendiente {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ----- Buscador ----- */
+.buscador {
+  display: flex;
+  gap: 8px;
+}
+
+.buscador input {
+  flex: 1; /* el input ocupa todo el ancho disponible */
+}
+
+/* La ✕ del buscador usa la clase btn-eliminar; aquí se iguala al alto del campo */
+.buscador .btn-eliminar {
+  padding: 10px 14px;
+}
+
+/* ----- Formulario ----- */
+/* Los tres elementos (nombre, tarea, botón) en una fila */
+.container {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap; /* en pantallas pequeñas pasan a la línea de abajo */
+}
+
+.container input {
+  flex: 1;
+  min-width: 120px;
+}
+
+/* ----- Lista ----- */
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
